@@ -18,20 +18,23 @@
       </ion-card-content>
     </ion-card>
     <ion-card>
-      <ion-item>
-          <ion-input placeholder="Name"></ion-input>
-      </ion-item>
+      <form>
+          <ion-item>
+              <ion-input placeholder="Name" [(ngModel)]="Name"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+              <ion-input placeholder="surname" [(ngModel)]="Surname"></ion-input>
+          </ion-item>
+    
+      </form>
       
       <ion-item>
-          <ion-input placeholder="surname"></ion-input>
-      </ion-item>
-
-      <ion-item>
-          <ion-button shape="round">Submit</ion-button>
+          <ion-button shape="round" block >Submit</ion-button>
         </ion-item>
       
         <ion-item>
-            <ion-button shape="round">Clear</ion-button>
+            <ion-button shape="round"ng-click="resetForm()">Clear</ion-button>
         </ion-item>
       
     </ion-card>

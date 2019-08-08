@@ -2,3 +2,11 @@
   max-height: 35vh;
   overflow: hidden;
 }
+input.reset-field { padding-right: 32px; }
+.reset-field-icon {
+    position: absolute;
+    right: 14px;
+    top: 22px;
+    margin: 0px;
+    color: #bbb;
+}
